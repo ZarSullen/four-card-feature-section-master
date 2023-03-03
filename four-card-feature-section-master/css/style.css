@@ -42,14 +42,16 @@ header {
 h1 {
     font-weight: 200;
     color: var(--VeryDarkBlue);
+    font-size: 2rem;
 }
 span {
     font-weight: 600;
     color: var(--VeryDarkBlue);
+    font-size: 2rem;
 }
 .header__texto {
     font-weight: 200;
-    font-size: 1.4rem;
+    font-size: 1rem;
 }
 /* main */
 .grid {
@@ -78,7 +80,7 @@ span {
 }
 .bloques {
     background-color: var(--VeryLightGray);
-    padding: 3rem;
+    padding: 2rem;
     border-radius: .5rem;
     display: flex;
     flex-direction: column;
@@ -97,9 +99,10 @@ span {
 }
 h3 {
     color: var(--VeryDarkBlue);
+    font-size: 1.2rem;
 }
 .bloques p {
-    font-size: 1.1rem;
+    font-size: .7rem;
     font-weight: 200;
     line-height: 1.5;
     color: var(--GrayishBlue);
