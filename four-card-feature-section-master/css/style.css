@@ -1,0 +1,110 @@
+:root {
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --VeryDarkBlue: hsl(234, 12%, 34%);
+    --GrayishBlue: hsl(229, 6%, 66%);
+    --VeryLightGray: hsl(0, 0%, 98%);
+    --fuente: 'Poppins', sans-serif;
+}
+html {
+    box-sizing: border-box;
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-size: 1.5rem;
+    font-family: var(--fuente);
+    background-color: var(--VeryLightGray);
+}
+.sombras {
+    -webkit-box-shadow: 0px 18px 36px -18px rgba(0,0,0,0.62);
+    -moz-box-shadow: 0px 18px 36px -18px rgba(0,0,0,0.62);
+    box-shadow: 0px 18px 36px -18px rgba(0,0,0,0.62); 
+}
+.contenedor {
+    max-width: 100rem;
+    width: 90%;
+    margin: 7rem auto;
+}
+.centrar {
+    text-align: center;
+}
+.no-margintop {
+    margin-top: 0;
+}
+/* header */
+header {
+    line-height: 1.5;
+}
+h1 {
+    font-weight: 200;
+    color: var(--VeryDarkBlue);
+}
+span {
+    font-weight: 600;
+    color: var(--VeryDarkBlue);
+}
+.header__texto {
+    font-weight: 200;
+    font-size: 1.4rem;
+}
+/* main */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    column-gap: 2rem;
+}
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
+    }
+}
+@media (max-width: 375px) {
+    .grid {
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
+    }
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.bloques {
+    background-color: var(--VeryLightGray);
+    padding: 3rem;
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+}
+.bloque__1{
+    border-top: .3rem solid  var(--Cyan);
+}
+.bloque__2{
+    border-top: .3rem solid  var(--Red);
+}
+.bloque__3 {
+    border-top: .3rem solid  var(--Orange);
+}
+.bloque__4 {
+    border-top: .3rem solid  var(--Blue);
+}
+h3 {
+    color: var(--VeryDarkBlue);
+}
+.bloques p {
+    font-size: 1.1rem;
+    font-weight: 200;
+    line-height: 1.5;
+    color: var(--GrayishBlue);
+}
+.iconos {
+    text-align: end;
+    margin-top: 3rem;
+}
