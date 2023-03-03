@@ -79,7 +79,7 @@ span {
     gap: 2rem;
 }
 .bloques {
-    background-color: var(--VeryLightGray);
+    background-color: white;
     padding: 2rem;
     border-radius: .5rem;
     display: flex;
